@@ -1,0 +1,99 @@
+.doctors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.doctor-image-container {
+  flex-basis: 20%;
+}
+
+.doctor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.doctor-info {
+  flex-basis: 60%;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(29, 194, 235);
+}
+
+.doctor-category {
+  font-size: 13px;
+  color: rgb(108, 104, 104);
+}
+
+.doctor-description-exp{
+  font-size: 13px;
+  color: rgb(108, 104, 104);
+}
+
+.doctor-description-l
+{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.assuranced {
+  background-color: rgb(44, 151, 44);
+  width: 90px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  height: 40px;
+}
+
+.assur_t
+{
+  padding-top: 0px;
+}
+
+.abc
+{
+  display: flex;
+  align-items: center;
+}
+
+.abc span {
+  margin-right: 20px;
+}
+
+
+.doctor-description {
+  font-size: 14px;
+}
+
+.appointment-button-container {
+  flex-basis: 20%;
+}
+
+.avail
+{
+  color: rgb(46, 164, 46);
+}
+
+.appointment-button {
+  padding: 10px;
+  color: white;
+  background-color: rgb(32, 166, 200);
+  border-radius: 5px;
+  border-color: rgb(32, 166, 200) ;
+}

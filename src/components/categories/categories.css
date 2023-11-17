@@ -1,0 +1,71 @@
+/* Categories.css */
+.main_grp {
+  text-align: center;
+  max-width: 800px; /* Set a maximum width for the main container */
+  margin: 0 auto; /* Center the container */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  max-height: calc(100vh - 100px); /* Adjust the maximum height based on your navbar height */
+}
+.categories-container {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  
+}
+.slick-slider {
+  overflow: hidden !important;
+}
+.category-card {
+  flex: 0 0 auto;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-title {
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.category-title:hover {
+  color: #008080; /* Teal text color */
+}
+
+.category-title.active {
+  border-bottom: 2px solid #008080; /* Teal border for the active category */
+}
+
+.category-image {
+  width: 100%;
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 8px; /* Add border-radius for a rounded look */
+}
+
+.slider-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-button {
+  background-color: #008080; /* Teal background */
+  color: white; /* White text color */
+  border: none;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.arrow-button:hover {
+  background-color: #006666; /* Darker teal on hover */
+}
+
+/* Add any other styles as needed */

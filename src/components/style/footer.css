@@ -1,0 +1,19 @@
+/* Footer.css */
+.footer {
+    background-color: #008080; /* Teal background */
+    padding: 1rem;
+    color: white; /* White text color */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add any other styles as needed */
+  

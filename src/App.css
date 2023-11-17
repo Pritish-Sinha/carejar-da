@@ -1,0 +1,278 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Apply default styles to the body */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Apply a default background color to the app */
+.App {
+  background-color: #cfcfcf; /* You can adjust this color as needed */
+}
+
+/* Common styles for white background */
+.bg-white {
+  background-color: #fff;
+}
+
+/* Main content container styles */
+.content {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+}
+.slick-slider {
+  overflow: hidden !important;
+}
+/* Styles for the mobile menu */
+.mobile_list {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.5s linear;
+}
+
+.mobile_list>.close_icon {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.mobile_list>ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile_list>ul>li {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.mobile_list>ul>li:hover {
+  background-color: white;
+}
+
+.mobile_list>ul>li:hover>a {
+  color: var(--primary-color);
+}
+
+.mobile_list>ul>li>a {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'CamphorBold';
+}
+
+/* Hamburger icon styles */
+#hamburger_icon {
+  display: none;
+  appearance: none;
+}
+
+#hamburger_icon:checked~.mobile_list {
+  left: 0;
+}
+
+#hamburger_icon:checked~.hamburger_menu {
+  display: none;
+}
+
+.hamburger_menu {
+  display: none;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .content {
+    width: 100%;
+  }
+
+  /* Hide specific elements at this breakpoint */
+  #medicines,
+  #lab_tests,
+  #surgeries,
+  #try_plus_ad,
+  #nav_mid {
+    display: none;
+  }
+
+  #cards_content {
+    width: 100%;
+  }
+
+  #searchbar_content {
+    width: 100%;
+  }
+
+  #searchbar_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger_menu {
+    display: block;
+  }
+
+  .nav>.wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .nav>.wrapper>.nav-left {
+    text-align: center;
+  }
+
+  .nav>.wrapper>div:last-child {
+    display: none !important;
+  }
+
+  .Card {
+    margin-bottom: 1rem;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .head>.btn {
+    position: unset !important;
+  }
+
+  #cards_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #card_content>div {
+    margin-bottom: 1rem !important;
+  }
+
+  #consult_doc {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  #download_left {
+    display: none;
+  }
+
+  #download_right {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #searchbar_content {
+    width: 100%;
+  }
+
+  #searchbar_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #banner_wrapper {
+    min-height: unset;
+  }
+
+  #footer_section {
+    min-width: 100vw !important;
+    width: 100%;
+  }
+
+  #footer_top {
+    width: 100% !important;
+  }
+
+  .footerdata {
+    min-width: 163px;
+    padding: 1rem;
+  }
+
+  .footerdata>h3 {
+    margin-top: 3rem;
+  }
+
+  #download {
+    display: block;
+  }
+
+  #downloadsub2 {
+    margin-left: 13% !important;
+  }
+
+  #beforedownload {
+    /* margin-left: 12% !important; */
+  }
+
+  #benifit_card {
+    margin-left: 5% !important;
+  }
+
+  #content {
+    width: 95% !important;
+  }
+
+  #pinkbanner {
+    height: 45% !important;
+    width: 62% !important;
+  }
+
+  #pinkheading {
+    font-size: 20px;
+  }
+
+  #pinksub {
+    font-size: 12px;
+  }
+
+  #active {
+    font-size: 10px;
+  }
+
+  #add {
+    font-size: 12px;
+    display: block !important;
+  }
+
+  .ctrl-btn {
+    display: none !important;
+  }
+}
+
+/* Additional styles as needed */
